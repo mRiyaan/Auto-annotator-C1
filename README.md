@@ -102,6 +102,7 @@ Open **http://127.0.0.1:3000** in your browser. System prerequisites: **Python 3
 
 - **[`context.md`](./context.md)**: Technical architecture, API surface, storage schema, caching model, and coordinate conventions.
 - **[`MLX_dependencies.md`](./MLX_dependencies.md)**: Exact audit of raw MLX tensor usage, directory tree, and NVIDIA CUDA migration guide.
+- **[`MISSING_WEIGHTS.md`](./MISSING_WEIGHTS.md)**: Complete log of missing non-MLX weights, exact target directories, `missing_nvidia_weights_bundle.zip` structure, and offline restore/verification commands.
 - **[`docs/README.md`](./docs/README.md)**: User guides for every route, feature, keyboard shortcut, and workflow:
   - [01 — Setup & NVIDIA Deployment](./docs/01-setup-and-nvidia-deployment.md)
   - [02 — Evaluation Workbench (`/analyze`, `/logs`, `/results`)](./docs/02-evaluation-workbench.md)
