@@ -21,3 +21,4 @@ Welcome to the documentation for **Control One — Auto-Annotator & VLM Evaluati
 
 - **[`../context.md`](../context.md)** — Repository layout, API architecture, normalized `0..1000` coordinate contract, SQLite tables, and frontend `sessionStorage` cache behavior.
 - **[`../MLX_dependencies.md`](../MLX_dependencies.md)** — Complete file tree and line-level audit of raw `mlx.core` tensor usage (`backend/engines/mlx_lora_engine.py`) vs cross-platform PyTorch CUDA code for NVIDIA deployment.
+- **[`../MISSING_WEIGHTS.md`](../MISSING_WEIGHTS.md)** — Exact log of missing non-MLX weights (`7` total), target directories, `missing_nvidia_weights_bundle.zip` layout, and restore/verification commands.

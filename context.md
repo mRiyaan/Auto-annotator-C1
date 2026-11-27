@@ -124,4 +124,4 @@ This document captures the full codebase architecture, module boundaries, state/
   - `backend/adapters/qwen3_vl_4b_8bit_person_lora/` (6 MLX LoRA `.safetensors` files — Apple Silicon MLX only).
   - 6 Hugging Face Hub cached repos under `~/.cache/huggingface/hub/` (4 NVIDIA-compatible OWLv2/Florence-2 + 2 MLX-only Qwen3-VL).
   - 2 Ollama models (`qwen3-vl:8b`, `qwen3-vl:4b`).
-- See **[`docs/06-model-weights-and-transfer.md`](./docs/06-model-weights-and-transfer.md)** for the full table and Google Cloud compression/transfer commands.
+- See **[`MISSING_WEIGHTS.md`](./MISSING_WEIGHTS.md)** for exact target directories and restore instructions for `missing_nvidia_weights_bundle.zip`, and **[`docs/06-model-weights-and-transfer.md`](./docs/06-model-weights-and-transfer.md)** for GCS commands.

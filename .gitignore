@@ -53,3 +53,8 @@ backend/storage/
 # macOS metadata
 .DS_Store
 **/.DS_Store
+
+# Local weight transfer archives (never commit)
+*.zip
+*.tar.gz
+
