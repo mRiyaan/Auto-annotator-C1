@@ -1,0 +1,55 @@
+# Environment & secrets (keep examples)
+.env
+**/.env
+!.env.example
+!**/.env.example
+frontend/.env*.local
+
+# Python environments & caches
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Node / Next.js / TypeScript caches
+node_modules/
+**/node_modules/
+frontend/.next/
+frontend/out/
+*.tsbuildinfo
+
+# Large model weights & checkpoints (>=100 MB or MLX-only adapters)
+# Keep the 4 Ultralytics/SAM/YOLOE checkpoints <100 MB tracked; ignore >=100 MB files (e.g. mobileclip2_b.ts) and MLX LoRA adapters.
+*.safetensors
+*.gguf
+*.bin
+*.pth
+*.onnx
+*.ckpt
+*.pt
+backend/adapters/
+backend/auto_annotate/weights/*
+!backend/auto_annotate/weights/mobile_sam.pt
+!backend/auto_annotate/weights/sam2.1_s.pt
+!backend/auto_annotate/weights/sam2.1_t.pt
+!backend/auto_annotate/weights/yoloe-26s-seg.pt
+
+# Raw datasets, ground truth, and runtime outputs
+pallet_pipeline/source_dataset/
+pallet_pipeline/source_dataset_bobbin/
+pallet_pipeline/ground_truth/
+pallet_pipeline/output/
+outputs/
+backend/storage/
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# macOS metadata
+.DS_Store
+**/.DS_Store

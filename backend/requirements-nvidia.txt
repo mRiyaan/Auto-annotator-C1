@@ -1,0 +1,10 @@
+# NVIDIA CUDA (Linux / Windows) dependencies
+# Adjust cu124 to cu121 or cu126 depending on your local `nvidia-smi` CUDA runtime.
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+torch>=2.5.0
+torchvision>=0.20.0
+accelerate>=1.0.0
+bitsandbytes>=0.44.0
+
+-r requirements.txt
