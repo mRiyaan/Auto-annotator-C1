@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --c1-bg: #0a0a0c;
+  --c1-sidebar: #101013;
+  --c1-card: #141416;
+  --c1-card-border: #26262a;
+  --c1-inset: #222225;
+  --c1-inset-border: #303035;
+  --c1-orange: #f2853f;
+  --c1-orange-hover: #ff9652;
+  --c1-text: #ffffff;
+  --c1-muted: #a1a1aa;
+  --c1-kicker: #8a8a8e;
+}
+
+html,
+body {
+  min-height: 100%;
+  background-color: var(--c1-bg);
+  color: var(--c1-text);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-image: radial-gradient(
+    ellipse 70% 35% at 50% -5%,
+    rgba(242, 133, 63, 0.09),
+    transparent 70%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.font-mono-tech {
+  font-family: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, monospace;
+}
+
+.c1-kicker {
+  font-family: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, monospace;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c1-kicker);
+}
+
+.c1-card {
+  background-color: var(--c1-card);
+  border: 1px solid var(--c1-card-border);
+  border-radius: 16px;
+}
+
+.c1-inset {
+  background-color: var(--c1-inset);
+  border: 1px solid var(--c1-inset-border);
+  border-radius: 12px;
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2f;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
